@@ -3,11 +3,20 @@ const path=require('path');
 
 const port= 7000;
 
-app.set('view engine','ejs');
-app.set('views',path.join(__dirname, 'views'));
+const db=require('./config/mongoose');
+const to_do=require('./models/to_do.js')
 
 const app= express();
 
+app.set('view engine','ejs');
+app.set('views',path.join(__dirname, 'views'));
+app.use(express.static('./assets'));
+
+app.get('/',function(req,res){
+    res.render('home',{
+        title: "My To Do List"
+    })
+})
 
 
 app.listen(port,function(err){
