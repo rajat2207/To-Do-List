@@ -29,7 +29,7 @@ app.post('/create-to-do', function(req,res){
         Date: req.body.Date
     },function(err , new_to_do){
         if(err){
-            console.log("Error in creating the contact");
+            console.log("Error in creating the contact "+ err);
             return;
         }
 

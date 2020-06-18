@@ -114,3 +114,58 @@ button{
     margin: 1rem;
 }
 
+#task-container{
+    border-bottom: 1px solid grey;
+    height: 80px;
+    /* padding-top: 20px; */
+}
+
+#description-container{
+    /* margin-left: rem; */
+    padding-left: 7rem;
+    font-weight: 550;
+    color: grey;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    word-spacing: 2px;
+    letter-spacing: 0.5px;
+}
+
+#list-category{
+    /* border: 1px solid grey; */
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    margin-top: 15px;
+    color: white;
+}
+
+#list-category:nth-child(3n){
+    background-color: yellow;
+}
+
+#list-category:nth-child(3n+1){
+    background-color: purple;
+}
+
+#list-category:nth-child(3n+2){
+    background-color: blue;
+}
+
+#close-option {
+    margin-top: 24px;
+    
+}
+
+#close-option a{
+    color: grey;
+    
+}
+
+#close-option a:hover{
+    text-shadow: 0px 0px 10px grey;
+}
+
+span{
+    font-size: 0.85rem;
+    margin-top: 0;
+}

@@ -6,7 +6,7 @@
         </title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="/css/home.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/home.css">
     </head>
     <body>
 
@@ -42,22 +42,22 @@
                 </div>
             </form>
             
+            
             <div class="container-fluid" >
-                <% for(let i of list) {%> 
                 <div class="row" id="task-container">
                     <div class="col-8" id="description-container">
-                        <%= i.Description %> <br>
-                        <span><i class="fas fa-calendar"></i> &nbsp;<%= i.Date %> </span>
+                        Get Vegetables<br>
+                        <span><i class="fas fa-calendar"></i> &nbsp;12-03-2019</span>
                     </div>
                     <div class="col-2" id="category-container">
                         <div id="list-category">
-                            <%= Category %> 
+                            Personal
                         </div>
                     </div>
                     <div class="col-2" id="close-option"><a href="/delete-todo"><i class="fas fa-times"></i></a></div>
                 </div>
-                <% } %> 
-            </div>
+            </div> 
+             
         </div>
 
         
