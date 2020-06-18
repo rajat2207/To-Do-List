@@ -10,6 +10,40 @@
     </head>
     <body>
 
+        <div id="app-box">
+            
+            <h1>TODO APP</h1>
+            
+            <form action="/create-to-do" method="POST">
+                
+                <div id="first-container">
+                    <label for="description">DESCRIPTION</label><br>
+                    <input type="text" id="description"  placeholder="What do you need to do?" name="Description" required>
+                </div>
+                
+                <div id="second-container">
+                    <label for="category">CATEGORY</label><br>
+                    <select id="category" name="Category">
+                        <option value="none" selected>Choose the category</option>
+                        <option value="Home">Home</option>
+                        <option value="Work">Work</option>
+                        <option value="Personal">Personal</option>
+                        <option value="School">School</option>
+                    </select>
+                </div>
+                
+                <div id="third-container" name="Date">
+                    <label for="date">DUE DATE</label><br>
+                    <input type="date" id="date" required>
+                </div>
+                
+                <div id="fourth-container">
+                    <button type="submit" ><i class="fas fa-plus"></i> ADD TASK</button>
+                </div>
+            </form>
+           
+                
+        </div>
         
 
          <!-- jQuery library -->

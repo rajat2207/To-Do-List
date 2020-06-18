@@ -1,3 +1,116 @@
 body{
     background-color: rgb(185, 170, 170) ;
+    font-family: sans-serif;
 }
+
+#app-box{
+    background-color: rgb(252, 253, 253);
+    min-height: 10px;
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    color: rgb(58, 54, 51);
+    font-weight: 200;
+    width: 70%;
+    margin: auto;
+}
+
+h1{
+    margin: 0;
+}
+
+form{
+    /* border : 2px solid black; */
+    margin:0;
+    width: 100%;
+}
+
+
+label{
+    font-weight: 550;
+    margin-bottom: -1px;
+    letter-spacing: 1px;
+}
+
+input,select{
+    background-color: inherit;
+    border: 0;
+    outline: none;
+    letter-spacing: 1.0px;
+    height: 2.5em;
+    margin-top: -1px;
+}
+
+#first-container{
+    width: 100%;
+    border: 1px solid grey;
+    border-left: 0px;
+    border-right: 0px;
+    margin: 0;
+    padding: 0.8rem 1.5rem;
+}
+
+
+#description{
+    width: 100%;
+}
+
+#second-container{
+    width: 48%;
+    
+    margin: 0;
+    padding: 0.8rem 1.5rem;
+    display: inline-block;
+}
+
+
+#third-container{
+    width: 49%;
+    border-left: 1px solid grey;
+    margin: 0;
+    padding: 0.8rem 1.5rem;
+    display: inline-block;
+}
+
+#category,#date{
+    color: rgb(170, 159, 159);
+    font-weight: 550;
+}
+
+#category{
+    width: 80%;
+}
+
+#date{
+    width: 50%;
+}
+
+#fourth-container{
+    width: 100%;
+    border: 1px solid grey;
+    margin: 0;
+    padding: 0.8rem 1.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-left: 0px;
+    border-right: 0px;
+
+
+}
+
+button{
+    border: 1px solid white;
+    width: 170px;
+    height: 60px;
+    background-color: rgb(226, 11, 11);
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 1rem;
+}
+
