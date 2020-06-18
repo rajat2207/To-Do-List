@@ -16,8 +16,16 @@ app.use(express.static('assets'));
 
 
 app.get('/',function(req,res){
-    res.render('home',{
-        title: "My To Do List"
+    todo.find({},function(err, todolist){
+        if(err){
+            console.log("Error in fetching the data");
+            return;
+        }
+
+        return res.render('home',{
+            'title': 'My To Do List',
+            'list': todolist
+        })
     })
 })
 
@@ -38,6 +46,19 @@ app.post('/create-to-do', function(req,res){
     })
 })
 
+
+app.get('/delete-todo/',function(req,res){
+    let id =req.query.id;
+
+    todo.findByIdAndDelete(id,function(err){
+        if(err){
+            console.log("Error in deleting the data");
+            return;
+        }
+
+        return res.redirect('back');
+    });
+})
 
 app.listen(port,function(err){
     if(err){

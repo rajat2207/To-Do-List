@@ -133,22 +133,27 @@ button{
 
 #list-category{
     /* border: 1px solid grey; */
-    width: fit-content;
+    width: 100px;
     padding: 0.5rem 1rem;
     margin-top: 15px;
     color: white;
+    text-align: center;
 }
 
-#list-category:nth-child(3n){
+.yellow{
     background-color: yellow;
 }
 
-#list-category:nth-child(3n+1){
+.purple{
     background-color: purple;
 }
 
-#list-category:nth-child(3n+2){
+.blue{
     background-color: blue;
+}
+
+.orange{
+    background-color: orange;
 }
 
 #close-option {

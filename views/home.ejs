@@ -47,14 +47,31 @@
                 <div class="row" id="task-container">
                     <div class="col-8" id="description-container">
                         <%= i.Description %> <br>
-                        <span><i class="fas fa-calendar"></i> &nbsp;<%= i.Date %> </span>
+                        <span><i class="fas fa-calendar"></i> &nbsp;<%= i.Date.toDateString() %> </span>
                     </div>
                     <div class="col-2" id="category-container">
-                        <div id="list-category">
-                            <%= Category %> 
-                        </div>
+                        <% if(i.Category=='Home'){ %> 
+                            <div id="list-category" class="yellow">
+                                <%= i.Category %> 
+                            </div>
+                        <% } %>
+                        <% if(i.Category=='Work'){ %> 
+                            <div id="list-category" class="purple">
+                                <%= i.Category %> 
+                            </div>
+                        <% } %>
+                        <% if(i.Category=='Personal'){ %> 
+                            <div id="list-category" class="blue">
+                                <%= i.Category %> 
+                            </div>
+                        <% } %>
+                        <% if(i.Category=='School'){ %> 
+                            <div id="list-category" class="orange">
+                                <%= i.Category %> 
+                            </div>
+                        <% } %> 
                     </div>
-                    <div class="col-2" id="close-option"><a href="/delete-todo"><i class="fas fa-times"></i></a></div>
+                    <div class="col-2" id="close-option"><a href="/delete-todo?id=<%= i._id %>"><i class="fas fa-times"></i></a></div>
                 </div>
                 <% } %> 
             </div>
